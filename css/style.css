@@ -1,0 +1,42 @@
+body {
+    font-family: Open Sans !important;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    margin: 0px !important;
+}
+
+.hero-unit {
+    background-image: url('../img/bg.jpg');
+    background-size: 100%;
+    background-position:top;
+    height: 100%;
+}
+
+.hero-unit>.inner-master {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.hero-unit>.inner-master>.inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-unit h1 {
+    font-family: Raleway;
+    letter-spacing: 0.5em;
+    font-size: 4em;
+    text-align: center;
+}
+
+.line {
+    background-color: #fff;
+    height: 1px;
+    width: 25%;
+    postion: relative;
+    margin: auto;
+}
