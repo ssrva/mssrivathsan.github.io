@@ -44,11 +44,14 @@ body{
     width: 100%;
     font-family: Gotham;
     font-weight: 100;
-    padding: 20px;
+    height: 120px;
+    line-height: 120px !important;
+    padding: 35px;
 }
 
 .topbar .fa-bars{
     cursor: pointer;
+    font-size: 50px !important;
 }
 
 .body{
