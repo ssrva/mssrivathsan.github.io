@@ -1,42 +1,305 @@
-body {
-    font-family: Open Sans !important;
+@font-face{
+    font-family: Gotham;
+    src: url('../fonts/Gotham Bold.ttf');
+    font-weight: 300;
 }
 
-h1 h2 h3 h4 h5 h6 {
-    margin: 0px !important;
+@font-face{
+    font-family: Gotham;
+    src: url('../fonts/Gotham Thin.ttf');
+    font-weight: 100;
 }
 
-.hero-unit {
-    background-image: url('../img/bg.jpg');
-    background-size: 100%;
-    background-position:top;
-    height: 100%;
+@font-face{
+    font-family: Gotham;
+    src: url('../fonts/Gotham Medium.ttf');
+    font-weight: 200;
 }
 
-.hero-unit>.inner-master {
-    height: 100%;
-    width: 100%;
+body{
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: 400%;
     color: #fff;
+    overflow: hidden;
+}
+
+.content{
     background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    font-family: Gotham;
+    position: fixed;
+    top: 0%;
+    left: 0%;
 }
 
-.hero-unit>.inner-master>.inner {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+.topbar{
+    font-size: 20px;
+    background-color: #27323A;
+    box-shadow: 0px 2px 5px #333;
+    width: 100%;
+    font-family: Gotham;
+    font-weight: 100;
+    padding: 20px;
 }
 
-.hero-unit h1 {
-    font-family: Raleway;
-    letter-spacing: 0.5em;
-    font-size: 4em;
+.topbar .fa-bars{
+    cursor: pointer;
+}
+
+.body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #fff;
+}
+
+.social-icons{
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 10px;
+    float: right;
+    transition: all 0.5s;
+}
+
+.social-icons:hover{
+    opacity: 1;
+}
+
+.sidebar{
+    background-color: #27323A;
+    position: absolute;
+    left: -100%;
+    padding-left: 10%;
+    box-shadow: 2px 0px 5px #333;
+}
+
+.title{
+    text-align: center;
+    padding: 50px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.sidebar .menu div{
+    padding: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 1px solid #d1d1d1;
+    font-weight: 100;
+    transition: all 0.5s;
+}
+
+.sidebar .menu div:hover{
+    background-color: #222;
+}
+
+.menu_close{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.about, .sponsors, .contactus, .register_now{
+    display: none;
+    padding: 20px;
+    font-weight: 100;
+}
+
+.about .title, .sponsors .title, .contactus .title, .register_now .title{
+    font-weight: 300;
+    border: none;
+}
+
+.about .stuff, .contactus .stuff{
+    text-align: justify;
+}
+
+.center{
     text-align: center;
 }
 
-.line {
-    background-color: #fff;
-    height: 1px;
-    width: 25%;
-    postion: relative;
-    margin: auto;
+.events{
+    padding: 30px;
+    display: none;
+}
+
+.event_cat{
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    line-height: 140px;
+    box-shadow: 0px 0px 3px #d1d1d1;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.event_cat div{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    font-weight: 100;
+    height: 100%;
+}
+
+.technical{
+    background-image: url('../images/techincal.jpg');
+}
+
+.non-technical{
+    background-image: url('../images/non technical.jpg');
+}
+
+.workshops{
+    background-image: url('../images/workshop.jpg');
+}
+
+.frames{
+    background-image: url('../images/frames.jpg');
+    background-position: bottom;
+}
+
+.techevents, .nontechevents, .workshop, .frame{
+    display: none;
+    padding: 50px 30px 30px 30px;
+}
+
+.{
+    display: none;
+    padding: 50px 30px 30px 30px;
+}
+
+.paper{
+    background-image: url('../images/paper.jpg');
+}
+
+.coding{
+    background-image: url('../images/techincal.jpg');
+}
+
+.appkraft{
+    background-image: url('../images/app design.jpg');
+}
+
+.web{
+    background-image: url('../images/web design.jpg');
+}
+
+.debug{
+    background-image: url('../images/debugging.jpg');
+}
+
+.quest{
+    background-image: url('../images/tech quest.jpg');
+}
+
+.appztime{
+    background-image: url('../images/app design.jpg');
+}
+
+.mrms_cybernova{
+    background-image: url('../images/mrms.jpg');
+}
+
+.braine_tiks{
+    background-image: url('../images/braine_tiks.jpg');
+}
+
+.misterious_mindz{
+    background-image: url('../images/misterious_mindz.jpg');
+}
+
+.goo_gler{
+    background-image: url('../images/goo_gler.jpg');
+}
+
+.konne_xions{
+    background-image: url('../images/konne_xions.png');
+}
+
+.media_mash{
+    background-image: url('../images/media_mash.jpg');
+}
+
+.puzzle_manio{
+    background-image: url('../images/puzzle_manio.jpg');
+}
+
+.dumb_charades{
+    background-image: url('../images/dumb_charades.jpg');
+}
+
+.tresor_hunt{
+    background-image: url('../images/tresor_hunt.jpg');
+}
+
+.game_freaks{
+    background-image: url('../images/game_freaks.jpg');
+}
+
+.light_and_life{
+    background-image: url('../images/frames.jpg');
+    background-position: bottom;
+}
+
+.kurum_padam{
+    background-image: url('../images/kurum_padam.jpg');
+}
+
+.android{
+    background-image: url('../images/android.jpg');
+}
+
+.iot{
+    background-image: url('../images/iot.png');
+}
+
+.event_page{
+    display: none;
+    padding: 30px;
+}
+
+.event_page .stuff{
+    font-weight: 100;
+}
+
+.event_page ul{
+    font-weight: 100;
+    margin-left: 30px;
+}
+
+/* ANIMATIONS */
+
+@keyframes menu_slide_in{
+    0% { left: -100%; }
+    100% { left: -10%; }
+}
+
+@keyframes menu_slide_out{
+    0% { left: -10%; }
+    100% { left: -100%;}
+}
+
+.menu_slide_in{
+    animation: 0.5s menu_slide_in forwards;
+}
+
+.menu_slide_out{
+    animation: 0.5s menu_slide_out forwards;
 }

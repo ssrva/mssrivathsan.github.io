@@ -1,41 +1,1447 @@
 <html>
-    
     <head>
-        
-        <title>Srivathsan !</title>
+        <title>Cybernova 2016</title>
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/bootstrap.css">
         <link rel = "stylesheet" href = "css/font-awesome.css">
-        <link href='http://fonts.googleapis.com/css?family=Signika:400,600|Open+Sans|Roboto|Raleway' rel='stylesheet' type='text/css'>
+        <link rel = "stylesheet" href = "css/reset.css">
         <script src = "js/jquery.js"></script>
-        <script src = "js/jquery-ui.js"></script>
-        
-        <script type = "text/javascript">
-            
+        <script>
             $(document).ready(function(){
                 
+                function reset(){
+                    $(".home .paper_presentation").hide();
+                    $(".home .programming").hide();
+                    $(".home .appkraft_event").hide();
+                    $(".home .cyberweb").hide();
+                    $(".home .deboguer").hide();
+                    $(".home .tecquest").hide();
+                    $(".home .appztime_event").hide();
+                    $(".home .mrmscybernova").hide();
+                    $(".home .brainetiks").hide();
+                    $(".home .misteriousmindz").hide();
+                    $(".home .googler").hide();
+                    $(".home .konnexions").hide();
+                    $(".home .mediamash").hide();
+                    $(".home .puzzlemanio").hide();
+                    $(".home .dumbcharades").hide();
+                    $(".home .tresorhunt").hide();
+                    $(".home .gamefreaks").hide();
+                    $(".home .android_dev").hide();
+                    $(".home .internetofthings").hide();
+                    $(".home .lightandlife").hide();
+                    $(".home .kurumpadam").hide();
+                    $(".home .techevents").hide();
+                    $(".home .nontechevents").hide();
+                    $(".home .workshop").hide();
+                    $(".home .frame").hide();
+                }
+                
+                $(".menu_icon").click(function(){
+                    $(".sidebar").removeClass("menu_slide_out");
+                    $(".sidebar").addClass("menu_slide_in");
+                });
+                
+                $(".menu_close").click(function(){
+                    reset();
+                    $(".sidebar").removeClass("menu_slide_in");
+                    $(".sidebar").addClass("menu_slide_out");
+                });
+                
+                $("#home").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").show();
+                    $(".home .events").hide();
+                    $(".home .sponsors").hide();
+                    $(".home .register_now").hide();
+                    $(".home .contactus").hide();
+                    $(".home .about").hide();
+                });
+                
+                $("#about").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").hide();
+                    $(".home .events").hide();
+                    $(".home .sponsors").hide();
+                    $(".home .register_now").hide();
+                    $(".home .contactus").hide();
+                    $(".home .about").show();
+                });
+                
+                $("#sponsors").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").hide();
+                    $(".home .events").hide();
+                    $(".home .about").hide();
+                    $(".home .register_now").hide();
+                    $(".home .contactus").hide();
+                    $(".home .sponsors").css("display", "flex");
+                });
+                
+                $("#events").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").hide();
+                    $(".home .about").hide();
+                    $(".home .sponsors").hide();
+                    $(".home .register_now").hide();
+                    $(".home .contactus").hide();
+                    $(".home .events").show();
+                });
+                
+                $("#contact").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").hide();
+                    $(".home .about").hide();
+                    $(".home .sponsors").hide();
+                    $(".home .register_now").hide();
+                    $(".home .contactus").show();
+                    $(".home .events").hide();
+                });
+                
+                $("#register").click(function(){
+                    $(".menu_close").click();
+                    $(".home .first_page").hide();
+                    $(".home .about").hide();
+                    $(".home .sponsors").hide();
+                    $(".home .register_now").show();
+                    $(".home .contactus").hide();
+                    $(".home .events").hide();
+                });
+                
+                $(".technical").click(function(){
+                    $(".home .events").fadeOut();
+                    $(".home .techevents").show();
+                });
+                
+                $(".paper").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .paper_presentation").show();
+                });
+                
+                $(".coding").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .programming").show();
+                });
+                
+                $(".appkraft").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .appkraft_event").show();
+                });
+                
+                $(".web").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .cyberweb").show();
+                });
+                
+                $(".debug").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .deboguer").show();
+                });
+                
+                $(".quest").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .tecquest").show();
+                });
+                
+                $(".appztime").click(function(){
+                    $(".home .techevents").fadeOut();
+                    reset();
+                    $(".home .appztime_event").show();
+                });
+                
+                $(".non-technical").click(function(){
+                    $(".home .events").fadeOut();
+                    $(".home .nontechevents").show();
+                });
+                
+                $(".mrms_cybernova").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .mrmscybernova").show();
+                });
+                
+                $(".braine_tiks").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .brainetiks").show();
+                });
+                
+                $(".misterious_mindz").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .misteriousmindz").show();
+                });
+                
+                $(".goo_gler").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .googler").show();
+                });
+                
+                $(".konne_xions").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .konnexions").show();
+                });
+                
+                $(".media_mash").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .mediamash").show();
+                });
+                
+                $(".puzzle_manio").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .puzzlemanio").show();
+                });
+                
+                $(".dumb_charades").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .dumbcharades").show();
+                });
+                
+                $(".tresor_hunt").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .tresorhunt").show();
+                });
+                
+                $(".game_freaks").click(function(){
+                    $(".home .nontechevents").fadeOut();
+                    reset();
+                    $(".home .gamefreaks").show();
+                });
+                
+                $(".workshops").click(function(){
+                    $(".home .events").fadeOut();
+                    $(".home .workshop").show();
+                });
+                
+                $(".android").click(function(){
+                    $(".home .workshop").fadeOut();
+                    reset();
+                    $(".home .android_dev").show();
+                });
+                
+                $(".iot").click(function(){
+                    $(".home .workshop").fadeOut();
+                    reset();
+                    $(".home .internetofthings").show();
+                });
+                
+                $(".frames").click(function(){
+                    $(".home .events").fadeOut();
+                    $(".home .frame").show();
+                });
+                
+                $(".light_and_life").click(function(){
+                    $(".home .frame").fadeOut();
+                    reset();
+                    $(".home .lightandlife").show();
+                });
+                
+                $(".kurum_padam").click(function(){
+                    $(".home .frame").fadeOut();
+                    reset();
+                    $(".home .kurumpadam").show();
+                });
+                
             });
-            
         </script>
-        
     </head>
-    
     <body>
         
-        <div class = "hero-unit">
+        <!-- HOME -->
+        <div class = "content home">
+            <div class = "topbar">
+                <span class = "fa fa-bars menu_icon"></span>
+            </div>
             
-            <div class = "inner-master">
-                <div class = "inner">
-                    <div class = "line"></div>
-                    <h1 class = "heroh1">SRIVATHSAN</h1>
-                    
-                    <div class = "line"></div><br>
-                    <p style = "text-align: center;">SITE UNDER CONSTRUCTION</p>
+            <div class = "body first_page">
+                <img src = "images/logo.png" style = "width: 80%;"><br><br><br>
+                <div>A NATIONAL LEVEL TECHNICAL SYMPOSIUM</div><br>
+                <div>PRESENTED BY</div><br>
+                <div>SRI KRISHNA COLLEGE OF ENGINEERING</div> 
+                <div>AND TECHNOLOGY</div>
+            </div>
+            
+            <!-- about -->
+            <div class = "body about">
+                <p class = "center title">SKCET</p><br>
+                <p class = "stuff">
+                    Sri Krishna College of Engineering and Technology prides itself in being on of the premier techincal Institutions of South India. Established in the year 1998, within a decade our institution has marched towards the pinnacle of glory through its remarkable achievements in the field of Engineering Education. Our college is ISO 9001:2008 certified, approved by AICTE, accredited by NBA, New Delhi and affiliated to Anna University, Chennai.
+                </p><br>
+                
+                <p class = "center title">CYBERNOVA</p><br>
+                <p class = "stuff">
+                    Cybernova is a National Level Technical Symposium organized by the Department of Computer Science, SKCET. From the techincal wizards who can cook up the latest technology in their garage to the hidden leaders who will rule the world one day, Cybernova has everything to entertain and challenge you. Prepare yourself to battle against the smartest geeks from various institutions around the country.
+                </p><br><br>
+            </div>
+            
+            <!-- sponsors -->
+            <div class = "body sponsors">
+                <p class = "center title">SPONSORS</p><br>
+                <a href = "http://flycart.org"><img src = "images/Flycart.png" width = "100%"></a><br><br>
+                <a href = "http://uniqtechnologies.co.in"><img src = "images/uniq.jpg" width = "100%"></a><br><br>
+                <img src = "images/pgi.jpg" width = "40%"><br><br>
+                <a href = "http://igniteengineers.com"><img src = "images/ignite.jpg" width = "100%"></a><br><br>
+            </div>
+            
+            <!-- Contact -->
+            <div class = "body contactus">
+                <p class = "center title">CONTACT US</p><br>
+                <p class = "stuff">
+                    KUNIAMUTHUR, POST OFFICE, SUGUNAPURAM, COIMBATORE - 08.<br><br>
+                    <span class = "fa fa-phone"></span> Vigneshwaran R : +91 9500233737<br>
+                    <span class = "fa fa-phone"></span> Gowtham Kumar D : +91 9655753421<br>
+                    <span class = "fa fa-phone"></span> Vignesh C : +91 9715691272<br><br>
+                    <span class = "fa fa-envelope"></span> cybernova16@skcet.ac.in<br><br>
+                </p>
+                <p class = "center title">BUS ROUTES</p>
+                <p class = "stuff">
+                    GANDHIPURAM --- SKCET<br><br>
+                    3, 3A, 3C, 3D, 3E, 3G, 3H, 3M, 3N, 3R, S7, S7A, 96 
+                    <br><br>
+                    UKKADAM --- SKCET <br><br>
+                    3, 31A, 3A, 3B, 3C, 3D, 3E, 3H, 3M, 3N, 3R, 3S, 3T, S30, S7, S7A, S2,96
+                </p>
+            </div>
+            
+            
+            <!-- Register -->
+            <div class = "body register_now">
+                <p class = "center title">REGISTER</p><br>
+                <p class = "stuff">
+                    <a href = "http://cybernova16.com/index.php#register">
+                        <button class = "btn btn-success">REGISTER NOW</button>
+                    </a>
+                </p>
+            </div>
+            
+            <!-- events -->
+            <div class = "body events">
+                <div class = "center">EVENTS</div><br><br>
+                <div class = "event_cat technical">
+                    <div>
+                        TECHNICAL
+                    </div>
                 </div>
+                <br><br>
+                
+                <div class = "event_cat non-technical">
+                    <div>
+                        NON TECHNICAL
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat workshops">
+                    <div>
+                        WORKSHOPS
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat frames">
+                    <div>
+                        FRAMES
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            <!-- tech events -->
+            <div class = "body techevents">
+                <div class = "center">TECHNICAL EVENTS</div><br><br>
+                <div class = "event_cat paper">
+                    <div>
+                        PAPIER PREZENTO
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat coding">
+                    <div>
+                        KODETZ
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat appkraft">
+                    <div>
+                        APP KRAFT
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat web">
+                    <div>
+                        CYBER WEB
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat debug">
+                    <div>
+                        DEBOGUER
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat quest">
+                    <div>
+                        TEC QUEST
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat appztime">
+                    <div>
+                        APPZTIME
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            <!-- PAPER -->
+            
+            <div class = "body event_page paper_presentation">
+                <p class = "center title">PAPIER PREZENTO</p><br>
+                <p class = "stuff">
+                    At Cybernova'16, we are looking for freshness in ideas. Ingenuity, imagination and originality are the factors by which your papers will be judged- not by technicality or jargon. Present your work before some of the most renowned professionals in the field and walk away with prizes ! You can choose one of the following topics for your presentation :
+                    <br><br>
+                    <ul>
+                        <li>5G Wireless Technology</li>
+                        <li>Android 6.0(Marshmallow) features</li>
+                        <li>Apache hadoop introduction</li>
+                        <li>Cloud computing</li>
+                        <li>Blue eyes technology</li>
+                        <li>Blue Tooth 4.0</li>
+                        <li>Cyber Crime and Security</li>
+                        <li>Electronic waste (e waste)</li>
+                        <li>Digital Media Broadcasting</li>
+                        <li>Encrypted Text chat Using Bluetooth</li>
+                        <li>Data Warehouse</li>
+                        <li>Image compression</li>
+                        <li>Automobile ignition system</li>
+                        <li>CNC Machine</li>
+                        <li>Mobile Computing</li>
+                        <li>Nano computing</li>
+                        <li>Network Security</li>
+                        <li>Robotics</li>
+                        <li>Cluster computing</li>
+                        <li>3D Printing</li>
+                        <li>Sand BoxTechnology</li>
+                        <li>Microcontroller Based Automation</li>
+                        <li>Wearable computers</li>
+                    </ul>
+                    
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        
+                        <li>This is a team based competition with a minimum of 2 members in each team.<br><br></li>
+                        
+                        <li>Abstract submission: An abstract must be submitted on-line which should concisely define the theme of the paper which should follow IEEE format. Word limit is 200 words.<br><br></li>
+                        
+                        <li>Short listed teams will have to come to SKCET for the finals during CYBERNOVA'16. Participants should use slide shows for the presentation.<br><br></li>
+                        
+                        <li>Each team will be given a total duration of 10 mins And the team has to present the paper for around 6 mins and the remaining 4 mins will be of query session with the guest lecturers.<br><br></li>
+                        
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">SUBMIT YOUR ABSTRACTS TO</p><br>
+                <p class = "stuff">
+                    1. Computer Science<br>
+                    2. Information Technology<br>
+                    Mail@ Cybercip16@gmail.com<br><br>
+
+                    1 Electronics and Communication<br>
+                    2. Electrical and Instrumentation<br>
+                    3. Electrical and Electronic<br>
+                    Mail@ Cybereeep16@gmail.com<br><br>
+
+                    1. Mechanical Engineering<br>
+                    2. Mechatronics<br>
+                    3. Civil Engineering<br>
+                    Mail@ Cybermmcp16@gmail.com<br>
+                    Last date for abstract submission is March 13th, 2016. Short listed participants will be intimated.
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1:<br><br>
+Abstract of the paper must be mailed to the above mentioned email-id with subject as the Topic of the Paper on or before March 13th, 2016.<br><br>
+
+                    Round 2:<br><br>
+Selected participants will be intimated through mail. They should prepare a power-point presentation representing their paper. The selected participants should present at Sri Krishna College of Engineering and Technology during CYBERNOVA'16.<br><br>
+
+                    Round 3:<br><br>
+1. Short listed teams will have to come to SKCET for the finals during CYBERNOVA'16. Participants should use slide shows for the presentation.<br><br>
+2. Each team will be given a total duration of 10 mins And the team has to present the paper for around 6 mins and the remaining 4 mins will be of query session with the guest lecturers.<br><br>
+3. Recorded dialogues/ Movie clippings are not allowed.<br><br>
+4. Decision of the judges will be final.<br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Praveen Kumar: 7845578966<br><br>
+                    Anoop: 7845290699<br><br>
+                    Ravina S: 9578877326
+                </p><br>
+            </div>
+            
+            <!-- CODING -->
+            
+            <div class = "body event_page programming">
+                <p class = "center title">KODETZ</p><br>
+                <p class = "stuff">
+                    Explore the Intellect in You!! Are you a perfect industry product?? Here is the event where your skills are tested in various fields of IT and also show your mettle at this contest bring the true coder in you. Ready to reflex your coding muscles and fight to prove your mettle with all you got in the arena? Beware!! The arena is not for weak souls, the rule of the jungle favours the strongest. Come, participate & have a throwback into the concepts !!!
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Decision of the judges will be final</li>
+                        <li>Individual participation</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    ROUND 1: BRAIN WAVE<br><br>
+                    FINE TUNE YOUR BRAIN POWER GET READY TO CHECK YOUR TECHNICAL SKILLS, REASONING ABILITIES, APTITUDE AND VERBAL.<br><br>
+                    APTITUDE<br><br>
+                    LOGICAL-15<br><br>
+                    REASONING-20<br><br>
+                    DURATION -30MINS<br><br>
+                    ROUND 2: PUZZLERS PARADISE<br><br>
+                    THE BATTLE OF BYTES-CODING FIESTA DEFINE YOUR DESTINY WITH 0's and 1'S. CODE YOUR WAY THROUGH COMPLICATIONS. EVERY SECONDS COUNTS LITERALLY !! <br><br>
+                    THIS ROUND CONSISTS OF 5 LOGICAL PUZZLES <br><br>
+                    DURATION -30MINS <br><br>
+                    CUT OFF-MIN 3 QUESTIONS.<br><br>
+
+                    ROUND 3 : CODE MASTERO<br><br>
+                    THIS ROUND CONSISTS OF DEBUGGING( 5 QUESTIONS ) AND OUTPUT PREDICTIONS( 5 QUESTIONS). DURATION - 10MINS CUT OFF-6 OVERALL SCORE OF THREE ROUNDS WILL BE CONSIDERED AND 3 WINNER WILL BE SHORTLISTED.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Harini.C.S: 7598888789<br><br> 
+                    Karpakam.C: 9487827792<br><br>
+                </p><br>
+            </div>
+            
+            <!-- APP KRAFT -->
+            
+            <div class = "body event_page appkraft_event">
+                <p class = "center title">APP KRAFT</p><br>
+                <p class = "stuff">
+                    Can you develop an application (console based) in a short span of time? Take part in our event and show us how quick you can develop an application. We'll guide you through the steps. All you have to do is to finish the coding task that we put in front of you and integrate what you have done at the end! At last, the fastest finisher wins!
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Allowed Languages C,C++,Java</li>
+                        <li>Plagiarism can't be tolerated and will lead to disqualification</li>
+                        <li>Coordinator's decision will be final</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                   Round 1:Qualifier Round<br><br>
+                    Contains programming problems which tests your logical and math ability<br><br>
+                    Will be hosted on Hackerrank<br><br>
+                    Shortlisting takes place depending on Hackerrank leaderboard<br><br>
+
+                    Round 2 :Build the App<br><br>
+                    Has 2 segments<br><br>
+                    In each segment, you have to finish the coding task which we give. Those who can't finish will be eliminated and others will advance to next segment<br><br>
+                    At last, you have to integrate what you did so far<br><br>
+                    The one who builds the app faster, wins the event<br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    G.Sarath Kumar:8122990437<br><br>
+                </p><br>
+            </div>
+            
+            <!-- CYBER WEB -->
+            
+            <div class = "body event_page cyberweb">
+                <p class = "center title">CYBER WEB</p><br><br>
+                <p>Sponsored By </p><br>
+                <img src = "images/Flycart.png" width = "50%"><br><br><br>
+                <p class = "stuff">
+                    Everyone build websites Few design it... If you are one among them,then here comes the golden oppurtunity – the CYBERWEB. Collaborate your creativeness and intelligence in coding to come up with outstanding web designs that attract the end users. Send us your website to cyberweb2k16@gmail.com The website can be based on any idea of your thought. Your innovation is the evaluation criteria make it simple and clear to be one step ahead in reaching the goal. And the best part of all, win this event and get internship offers at Flycart !
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Only individual participants are allowed.</li>
+                        <li>There will be 2 rounds.</li>
+                        <li>Rules of each round will be explained prior to it.</li>
+                        <li>The decision of the judges will be final.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    ROUND 1:<br><br>
+                    GOOD ART INSPIRES, GOOD DESIGN MOTIVATES (DESIGN IS JUST NOT WHAT IT LOOKS LIKE AND FEELS LIKE. DESIGN IS HOW IT WORKS) USER INTERFACE OF THE WEBSITE IS CREATED BASED UPON THE REQUIREMENTS GIVEN FOR THE WEBSITE. THE MOST PRIOR CONSTRAINT CONSIDERED WOULD BE THE DEPTH OF THE CONTENT INCLUDED IN THE UI AND THEN, THE USER FRIENDLY LEVEL REACHED BY THE CONTEXT.
+                    <br><br>
+                    ROUND 2:<br><br>
+                    LOGIC - THE BEGINNING OF WISDOM (LOGIC IS NEITHER AN ART, NOR A SCIENCE. BUT A DODGE.)THE BUSINESS LOGIC THAT SOLVES THE LISTED CONSTRAINTS IS ESTABLISHED. AT LEAST 51% OF THE CONSTRAINTS' SHOULD BE SOLVED TO PASS THIS ROUND.
+                    <br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Uva Bharathi: 8973206626<br><br>
+                </p><br>
+            </div>
+            
+            <!-- DEBOGUER -->
+            
+            <div class = "body event_page deboguer">
+                <p class = "center title">DEBOGUER</p><br><br>
+                <p class = "stuff">
+                    "The majority see the obstacles; the few see the objectives; history records the successes of the latter, while oblivion is the reward of the former." Are you an expert in debugging ? Then as you know, given enough eyeballs, all bugs are shallow.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Each team can consist of a minimum of one member and a maximum of two members.</li>
+                        <li>The participants need not necessarily be from the same institution/college.</li>
+                        <li>You will need to present a valid college ID card for the general registration.</li>
+                        <li>Usage of mobile phones and PDAs are strictly prohibited during the event.</li>
+                        <li>No contestant can be a member of more than one team.
+                        <li>Teams involved in any kind of malpractice will be immediately disqualified.</li>
+                        <li>Organiser's decision will be final and binding.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    ROUND 1: BUGZILLA<br><br>
+                    The most serious mistakes are not being made as a result of wrong answers. The truly dangerous thing is asking the wrong questions.
+                    <br><br>
+                    In this round standard debugging questions in C/C++ will be given and participants are expected to find the errors in the given code snippets.
+                    <br><br>
+                    Round duration will be 30 minutes.
+                    <br><br>
+                    15 teams will be selected for the next round.
+                    <br><br>
+                    Round 2 :REVERSE GEAR
+                    <br><br>
+                    This is a round of reverse coding.
+                    <br><br>
+                    The participants are given the executable of programs or errors, that need to be implemented in any available programming language platform.
+                    <br><br>
+                    Round duration will be 1 hour.
+                    <br><br>
+                    The top 3 teams will be selected as finalists.
+                    <br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Priyanka : 7639797113<br><br>
+                    Swathika : 9489827307<br><br>
+                </p><br>
+            </div>
+            
+            <!-- TEC QUEST -->
+            
+            <div class = "body event_page tecquest">
+                <p class = "center title">TEC QUEST</p><br><br>
+                <p class = "stuff">
+                    Let your skills do the talking. Come up with your technical skills solve the puzzle and go for an amazing treasure hunt. Enter Tech quest, crutch your heads, be quick, run and explore to solve the mysterious puzzle and earn the treasure.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Each team should consist of 2 or 3 members.</li>
+                        <li>No use of electronic gadgets.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1:
+                    <br><br>
+                    A set of technical questions will be provided and the teams which solve the most number of questions will be allowed for the next round.
+                    <br><br>
+                    Round 2 :
+                    <br><br>
+                    The short listed contestants will be given a puzzle with a single clue and the team which come up with the answer can go for the treasure hunt (puzzle should be solved within the given time)
+                    <br><br>
+                    Round 3:
+                    <br><br>
+                    Contestants will be provided with some clues and they should find the coding lines of a program which will be hidden in different places and should come up with the output of it within the given time.
+                    <br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Kerija:9750693595<br><br>
+                    Keerthana D:9790084663<br><br>
+                </p><br>
+            </div>
+
+
+            
+            <!-- APPZ TIME -->
+            
+            <div class = "body event_page appztime_event">
+                <p class = "center title">APPZ TIME</p><br><br>
+                <p class = "stuff">
+                    Appztime would be a honeypot event for App developers. All you have to do is show your Creation and bag away the prizes. If that doesn't settle you, we forgot to mention that UNIQ technologies is rolling out Internship opportunities for finalists.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Participants are supposed to bring their "working" app along with source codes and development environment</li>
+                        <li>Maximum of 3 members per team</li>
+                        <li>Decision is taken by Jury , based on your app</li>
+                        <li>Jury's decision will be based on your App' performance ,user experience and third party library usages</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: Submission
+                    <br><br>
+                    Participants can arrive at any time and submit their app along with source codes . Top 3 apps selected by jury will advance to the next round
+                    <br><br>
+                    Round 2 : Knock/out
+                    <br><br>
+                    Round 2 is designed to test your Technical depth. Explore other's source codes and find better alternative. Decisions is based on number of better alternative's your team finds
+                    <br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    R.Nandha Kumar:9688612122<br><br>
+                    D.Jebaraj : 9524838815<br><br>
+                </p><br>
+            </div>
+            
+            
+            <!-- non tech events -->
+            <div class = "body nontechevents">
+                <div class = "center">NON TECHNICAL EVENTS</div><br><br>
+                <div class = "event_cat mrms_cybernova">
+                    <div>
+                        Mr. & Mrs. CYBERNOVA
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat braine_tiks">
+                    <div>
+                        BRAINETIKS
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat misterious_mindz">
+                    <div>
+                        MISTERIOUS MINDZ
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat goo_gler">
+                    <div>
+                        GOOGLER
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat konne_xions">
+                    <div>
+                        KONNEIXIONS
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat media_mash">
+                    <div>
+                        MEDIA MASH
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat puzzle_manio">
+                    <div>
+                        PUZZLE MANIO
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat dumb_charades">
+                    <div>
+                        DUMB CHARADES
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat tresor_hunt">
+                    <div>
+                        TRESOR HUNT
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat game_freaks">
+                    <div>
+                        GAME FREAKS
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            <!-- MR MS CYBERNOVA -->
+            
+            <div class = "body event_page mrmscybernova">
+                <p class = "center title">MR AND MS CYBERNOVA</p><br>
+                <p class = "stuff">
+                    Are you the guy or girl with the phenomenal control over your mind and body? Do you always have an Edge over the others? Are you ready to showcase your Unrestricted Self? Are you the one who could make instantaneous decisions? Can you reason out even the weirdest of happenings? Then this Is the Right Place For You! Cybernova Present you with the chance to become the Star of the Show. The one Event which makes you the “Star Icon” of the day! Here we go! The Title Event! “Mr&Miss Cybernova” . The title can’t be given for granted! We make you to face the very divergent side of your ‘self’. For which you have to adapt yourself with the Edge over your competitors by showcasing your unique talents like logical reasoning, personality, Mastery over your language and body, recklessness, and oneness! So Come along and become the star of the day!
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Our event encourages one to be unique! So only "Individual Participation." No Teams!</li>
+                        <li>Any number of entries from a college are welcomed! But at last only one could earn the Title</li>
+                        <li>Be Professional. Body language and Accent matters!</li>
+                        <li>College ID cards are Mandatory!</li>
+                        <li>This is the most important rule! Make sure that you enjoy the day and learn at least few new informative things from the day!</li>
+                        <li>Selection process is purely based on your Attitude, Body Language, Interpersonal skills, Logical Reasoning level and your mastery in the language. At every round the participants’ count will be slashed 20%. Every round focuses on every single aspect and at last the one Master wiz will be crowned!</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1 : The selected participants from ground Zero would be put into a pool of events which test all the above mentioned skills. Think Before you speak! Be proficient in your language! Boldness boost your chances of survival!
+                    <br><br>
+                    Round 2 : Claiming to be the Hero of the day doesn’t come that easy! Mastering only your own self alone is never enough! Mastering your surroundings is the need of the hour! Keeping oneself updated is the way to survive in this world!! This round allows you to channel your thoughts over different topics and Debate with your Opponents! Be spontaneous and be noticed!
+                    <br><br>
+                    Round 3 : This is the Final Round! Yes! The shortlisted finalists will be.. Umm.. what is the fun in saying all the minute details in the beginning itself?? Come reach here to know what we do to you! But we can say one thing to you! This will be the most stressful event of the day! Remembe.. Pain is temporary, Pride is forever!  
+                    <br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Colin: 9940808571 <br><br>
+                    Ranjini R: 9500798707<br><br>
+                </p><br>
+            </div>
+            
+            <!-- BRAINETIKS -->
+            
+            <div class = "body event_page brainetiks">
+                <p class = "center title">BRAINETIKS</p><br>
+                <p class = "stuff">
+                    Are you aware of all the happenings around the world? You Think You Are Smart ?? Then this is the right place to challenge your knowledge and your ability to respond quickly and accurately. Jump in to test how brainy you are..!!We dare you to dazzle us.!! Challenge your unbeatable intelligence!!!
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Each team should contain 2 or 3 members.</li>
+                        <li>No use of electronic gadgets.</li>
+                        <li>For the Round 2 and Round 3 highest scoring teams will be selected.</li>
+                        <li>In Round 3, the team which scores highest point will be the winner.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: Preliminary "Don't Limit Your Challenges, Challenge Your Limits". A set of questions will be provided and the teams which scores maximum marks are qualified for next round. There is no negative marking for wrong answer. This is a written round.
+                    <br><br>
+                    Round 2 : Wipeout A set of questions will given for the selected teams from round 1 which will be more tricky and versatile. This is a written round.
+                    <br><br>
+                    Round 3: Final Round Final round includes two stages: 1. Buzzer round 2. Bonus round.
+                    <br><br>
+                    1.Buzzer round<br><br>
+                    A question will be fired and the team who presses the buzzer first will get a chance to answer first.<br><br>
+                    10 points will be given for every correct answer and 5 points will be deducted for the wrong answer<br><br>
+                    Incase of wrong answer the question will be passed to the next team.<br><br>
+                    2.Bonus round
+                    <br><br>
+                    There are two kinds of questions in this round: Toss up and Bonus.<br><br>
+                    This round starts with a toss up question which carries 10 points and the rules are same as buzzer round.<br><br>
+                    The team which answers toss up question correctly get a chance to answer 2 bonus questions worth 30 points.<br><br>
+                    The bonus question starts of with 10 point question and if they answer correctly they can move on to 20 point question.<br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Anjali: 9095553053<br><br>
+                    Sowmya: 7810095248<br><br>
+                </p><br>
+            </div>
+            
+            <!-- MISTERIOUS MINDZ -->
+            
+            <div class = "body event_page misteriousmindz">
+                <p class = "center title">MISTERIOUS MINDZ</p><br>
+                <p class = "stuff">
+                    Every problem is nailed with a logical solution which definitely requires a brainy person like you. If you can be logical, then you are definitely magical. Sounds good, right?! Here we go...
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Participate with a team of two.</li>
+                        <li>If you're brainy, you're qualified for round 2.</li>
+                        <li>If you’re swift to hit the time, round 3 is yours.</li>
+                        <li>You are the 'brainy winner' if you're lucky to handle the buzzer.</li>
+                        <li>In the third round the selection is based on their smartness and communication skills.</li>
+
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: REALOOGICALZ <br><br>
+                    Be excited to realise that 'you can be logical' either. There are 25 questions which can prove you in terms of Picture Puzzle, Letter Series, Anagram, etc.
+                    <br><br>
+                    Round 2: FIZZY MINDZ <br><br>
+                    Follow your heart? Well, actually no; follow your mind. Here is a lil’ hard bunch of questions, nearly 18, testing your capability towards Analogy, Sudoku, etc.
+                    <br><br>
+                    Round 3: BRAINEE BUZZERZ
+                    <br><br>
+                    'Got brains, haven't you?' Get ready to give a really tough competition with your folks. Simply to say, a buzzer round of hard choices between logic and reason that keeps you high.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Ramya D: 8903448494<br><br>
+                    Sushmitha R: 8754721388<br><br>
+                </p><br>
+            </div>
+            
+            <!-- GOOGLER -->
+            
+            <div class = "body event_page googler">
+                <p class = "center title">GOOGLER</p><br><br>
+                <p class = "stuff">
+                    Calling all brilliant breeds and creative creeds !! Search the path to follow, destiny awaits. Roam the world of internet to find keys to unlock the answers in our google freaks. Google is gonna sit next to you during this event, which could even answer the questions which your brain couldn’t. Just Imagine answering to the questions with the help of the biggest genius THE GOOGLE alongside you ..
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Our event encourages you to the maximum possible extent .. You can bring in your friend for help besides google - "Two member Team"</li>
+                        <li>Any number of entries from a college are welcomed! But only one time entry for a single individual is permitted .</li>
+                        <li>College ID cards are Mandatory!</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1 : Search me if you can<br><br>
+                    Surf the net with the following detergents like doodles, tagline, silhouette, images etc to discover the answers. This round comprises of 20 questions.
+                    <br><br>
+                    Round 2 : USE GOOGLE & GO-COOL<br><br>
+                    Tour the internet with clues as torches to defeat tiring queries. The queries will be related to identifying a famous personality, place, event or products
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Nivedha VP: 9489882212<br><br>
+                    Srinath: 9715074266<br><br>
+                </p><br>
+            </div>
+            
+            <!-- konnexions -->
+            
+            <div class = "body event_page konnexions">
+                <p class = "center title">KONNEXIONS</p><br><br>
+                <p class = "stuff">
+                    A fun filled game in which players try to find hidden articles by using a series of clues within a period of time.It is a variation on the theme of a treasure hunt in which participants follow a set of directions and discover the hidden things..
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>A team should consist of only two members.</li>
+                        <li>Guidelines will be provided prior to the particular round.</li>
+                        <li>Team members should not change their teams during the event.</li>
+                        <li>Judge's decision will be final.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: The contestants has to guess the answer which is inscribed in the picture. The picture can describe anything like song, film, person, appliances, etc.. Each slot consists of 8 questions, in which 3 questions are starred, which can be used to solve the draw (incase if it occurs). Each picture should be guessed within one minute.
+                    <br><br>
+                    Round 2 : For this round, only 10 teams are allowed who score high in round 1. In this round, the images will be shuffled and the contestants has to segregate it to find the answer.
+                    <br><br>
+                    Round 3 : Here the teams will be reduced to 5. A video will be played for about 50 seconds and the contestants has to demonstrate the audio in that video through actions or just have to imitate in a comical way.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Raghavendra NV: 9843890666<br><br>
+                    Akil Abinaya: 9750699911<br><br>
+                </p><br>
+            </div>
+            
+            <!-- MEDIA MASH -->
+            
+            <div class = "body event_page mediamash">
+                <p class = "center title">MEDIA MASH</p><br><br>
+                <p class = "stuff">
+                    Here comes one of the non-technical event in CYBERNOVA'16. It's going to be a full of fun event where you can express your smartness within you.Come on friends participate in this event and win the exciting prizes.It's going to be like a team event where a team of two members are allowed to participate in this event.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>A team of two members are allowed to participate in this event.</li>
+                        <li>In the buzzer round the team which is likely to press the buzzer will be allowed to answer first and a negative mark of 1 for not answering the question and for wrong answers a negative mark of 0.5 will be given.</li>
+                        <li>In the first round the teams are qualified for the second round based on the score they obtain .Only 10 teams are shortlisted in this round.</li>
+                        <li>In the second round based on the scores,only top 5 teams will be shortlisted.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1 :TWO MINDS ONE ACTIONThis round is based on written round here we'll give them 20 slogans or logos of a brand name and they have to find the name of the brand.
+                    <br><br>
+                    Round 2 :BUZZER PRESS(AUDIO & VIDEO) Video will be played first for individual teams and the mimicry of that video must be done! Apart from this dialogues will be played and the task is to find the name of the movie.
+                    <br><br>
+                    Round 3 :ADVERTISING MINDS Here comes the final round of the event MEDIA MASH.In this round the product will be given to team members and they have to advertise it.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Sathya Narayanan:9159813625<br><br>
+                    Ravina : 9578877326<br><br>
+                </p><br>
+            </div>
+
+
+            
+            <!-- PUZZLE MANIO -->
+            
+            <div class = "body event_page puzzlemanio">
+                <p class = "center title">PUZZLE MANIO</p><br><br>
+                <p class = "stuff">
+                    Brainstorming event for solving brain teasers and logical thinking capability. The team which leaps two hurdles will enter into the 'Binero'. "Man is the riddle of the universe and the riddle of man in his endowment with personal capacities"
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>Maximum of two individuals can participate.</li>
+                        <li>Among all the participants the 25 teams will be qualified for the second round based on their scores.</li>
+                        <li>Depending upon their smartness and swiftness 10 teams will be selected for the final round.</li>
+                        <li>Depending upon sharpness and skills the top three teams will be declared as winners.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: LOGIC JACK<br><br> 
+                    The nice thing about doing a puzzle is, you always know there is a solution" This round consists of 25 questions that tests your logical ability.
+                    <br><br>
+                    Round 2: CROCO PUZZLE<br><br>
+                    The solution often turns more beautiful than the puzzle." The puzzle consists of small irregularly cut pieces that are to be fitted together to form a historical event.
+
+                    Round 3: BINERO "Crank it"<br><br>
+                    A buzzer round that finally rewards the smart intuitive thinkers.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Surendhar: 8144016154<br><br>
+                    Agnes: 9751434247<br><br>
+                </p><br>
+            </div>
+
+
+            
+            <!-- DUMB CHARADES -->
+            
+            <div class = "body event_page dumbcharades">
+                <p class = "center title">DUMB CHARADES</p><br><br>
+                <p class = "stuff">
+                    Are you aware of all the happenings around the world? You Think You Are Smart ?? Then this is the right place to challenge your knowledge and your ability to respond quickly and accurately. Jump in to test how brainy you are..!!We dare you to dazzle us.!! Challenge your unbeatable intelligence!!!
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>A team should consist of only two members.</li>
+                        <li>There are two rounds.</li>
+                        <li>Rules will be explained before each round.</li>
+                        <li>Speaking during the game play is not allowed.</li>
+                        <li>Decisions will be made by the Judges.</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    Round 1: <br><br>
+                    This is the round where one will be the actor and your partner will be the guesser.The famous song line is given to the actor and the guesser supposed to find it within 2 mins.Time is taken into action,each and every second matters.
+                    <br><br>
+                    Round 2 : <br><br>  
+                    It may be a name of a movie, quotes, hero, heroine is provided the guesser will have to find it. "DO IT TOGETHER"
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Deepika J : 9629356079<br><br> 
+                    Sadhvi Akshaya: 8056316892<br><br>
+                </p><br>
+            </div>
+
+
+            
+            <!-- TRESOR HUNT -->
+            
+            <div class = "body event_page tresorhunt">
+                <p class = "center title">TRESOR HUNT</p><br><br>
+                <p class = "stuff">
+                    A fun filled game in which players try to find hidden articles by using a series of clues within a period of time.It is a variation on the theme of a treasure hunt in which participants follow a set of directions and discover the hidden things..
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>There will only be a single round.</li>
+                        <li>Only 3 per team.</li>
+                        <li>You will be given a list of 30 things, and your goal is to find those things within 30 minutes.</li>
+                        <li>The clues are to be found in a particular order. A team cannot skip a clue. Skipping a clue leads to disqualification of the team.</li>
+                        <li>Wallets, mobile phones and all the other device of communication will be taken away from the participants. You must rely on your team members only.</li>
+                        <li>The final treasure is the same for all , so the team that finds the final treasure will be declared winners. If by any chance every team fails to find the final treasure , the team with that collects the maximum clues ( of the 30 ) in the designated time will be crowned winners.</li>
+                    </ul>
+                </p><br>
+
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Mirna Renita: 9629811527<br><br>
+                    Raghavendra Kumar A: 9952440145<br><br>
+                </p><br>
+            </div>
+
+
+            
+            <!-- GAME FREAKS -->
+            
+            <div class = "body event_page gamefreaks">
+                <p class = "center title">GAME FREAKS</p><br><br>
+                <p class = "stuff">
+                    NEED FOR SPEED'13
+                    <br><br>
+                    It is a competition based on PC game“Need for speed”had been developed by EA Sports.It features open world racing, and most of the cars in the game are available from the start, hidden in different locations. Performance upgrades are available for all the cars in the game, such as chassis, tires, nitrous, and bodywork.Milestones and achievements are unlocked through a variety of ways.
+                    <br><br>
+                    FIFA'15
+                    <br><br>
+                    It is a competition based on PC game“International Federation of Association Football” and the game had been developed by EA Sports. It provides you the Realistic playmaking abilities. FIFA gives you the experience of Football skills and movements at your Hands with Joystick instead of a boot and a soccer ball.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    The participants need not necessarily be from the same institution/college. The participants are not allowed to bring any additional material. Teams involved in any kind of malpractice will be immediately disqualified.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Jagathesh: 8015513383 <br><br>
+                    Goutham Kumar: 9655753421<br><br>
+                </p><br>
+            </div>
+            
+            
+            
+            <!-- workshops -->
+            <div class = "body workshop">
+                <div class = "center">NON TECHNICAL EVENTS</div><br><br>
+                <div class = "event_cat android">
+                    <div>
+                        ANDROID
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat iot">
+                    <div>
+                        INTERNET OF THINGS
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            
+            <!-- ANDROID WORKSHOP -->
+            
+            <div class = "body event_page android_dev">
+                <p class = "center title">ANDROIND WORKSHOP</p><br><br>
+                <p class = "stuff">
+                    Android is the latest Smartphone OS developed by Google taking the smart phone industry by storm. In nearly 2 years of it existence, it has over 40% of the Smartphone OS share. And still Android is not showing any sign of slowing down. Besides Android OS being Open Source, it is a real treat for programmers and developers to dwell into it. Get Exposed to the World of Android !
+                    <br><br>
+                    Registration Fee : 350 INR
+                </p><br>
+                
+                <p class = "center title">NOTE</p><br>
+                <p class = "stuff">
+                    <ul>
+                        <li>2 Certificates will be provided to all participants(App creation and workshop ).</li>
+                        <li>Refreshment and Lunch will be provided</li>
+                        <li>Timing : 9.30AM - 4PM</li>
+                    </ul>
+                </p><br>
+                
+                <p class = "center title">CONTENTS COVERED</p><br>
+                <p class = "stuff">
+                        OVERVIEW
+                        <br><br>
+                        <ul>
+                            <li>Introduction</li>
+                            <li>What is android</li>
+                            <li>Android in industry</li>
+                            <li>Android Architecture</li>
+                            <li>Android Virtual Device Manager</li>
+                        </ul>
+                        <br><br>
+                        ANDROID TOOLS AND ANDROID NEW PROJECT
+                        <br><br>
+                        <ul>
+                            <li>Android SDK</li>
+                            <li>Java JDK</li>
+                            <li>Eclipse IDE</li>
+                            <li>New project creation and explanation about files</li>
+                        </ul>
+                        <br><br>
+                        VIEW GROUPS
+                        <br><br>
+                        <ul>
+                            <li>Linear Layout</li>
+                            <li>Absolute Layout</li>
+                            <li>Relative Layout</li>
+                            <li>Scroll View</li>
+                        </ul>
+                        <br><br>
+                        INPUT CONTROLS AND INPUT EVENTS(VIEWS)
+                        <br><br>
+                        <ul>
+                            <li>Button, Image Button</li>
+                            <li>GetText,SetText,Button Click Event</li>
+                            <li>Text View</li>
+                            <li>Edit Text</li>
+                        </ul>
+                        <br><br>
+                        NOTIFICATIONS
+                        <br><br>
+                        <ul>
+                            <li>Toast</li>
+                        </ul>
+                        <br><br>
+                        INTENT AND INTENT FILTERS
+                        <br><br>
+                        <ul>
+                            <li>Intent</li>
+                            <li>Intent Filter</li>
+                        </ul>
+                        <br><br>
+                        SERVICES
+                        <br><br>
+                        <ul>
+                            <li>Sms Manager</li>
+                            <li>Telephony Manger</li>
+                        </ul>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Lenehaa R: 9043493124<br><br>
+                    Praveen R: 9894493124<br><br>
+                    Vikas SRA: 9677927814<br><br>
+                </p><br>
+            </div>
+
+
+            <!-- IOT -->
+            
+            <div class = "body event_page internetofthings">
+                <p class = "center title">INTERNET OF THINGS</p><br><br>
+                <p class = "stuff">
+                    "Anything that can be connected will be connected" A big callout for all the tech junkies out there . IOT (Internet of things) seems to be the talk of the town nowadays . So what's really in it ?. Simply put this is the concept of basically connecting any device with an on and off switch to the Internet (and/or to each other). This includes everything from cell phones, coffee makers, washing machines, headphones, lamps, wearable devices and almost anything else you can think of. This also applies to components of machines, for example a jet engine of an airplane or the drill of an oil rig. Say for example you are on your way to a meeting, your car could have access to your calendar and already know the best route to take, if the traffic is heavy your car might send a text to the other party notifying them that you will be late. Never miss a step to revolutionize the world !!!<br><br>
+                    Registration Fee : 350 INR
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    1. Everything will be shown practically so if the participants are interested they can bring their laptops and experience the thrill. <br><br>
+                    2. Certificates will be provided to all participants. 
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Lenehaa R: 9043493124<br><br>
+                    Praveen R: 9894493124<br><br>
+                    Vikas SRA: 9677927814<br><br>
+                </p><br>
+            </div>
+
+        
+            <!-- frames -->
+            <div class = "body frame">
+                <div class = "center">FRAMES</div><br><br>
+                <div class = "event_cat light_and_life">
+                    <div>
+                        LIGHT AND LIFE
+                    </div>
+                </div>
+                <br><br>
+                
+                <div class = "event_cat kurum_padam">
+                    <div>
+                        KURUM PADAM
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            
+            <!-- LIGHT AND LIFE -->
+            
+            <div class = "body event_page lightandlife">
+                <p class = "center title">LIGHT AND LIFE</p><br><br>
+                <p class = "stuff">
+                    Emotions are captured by a camera. The beholder of an image thus captured can experience all of these emotions transcending time and geographical boundaries. You may be a pro or an amateur at photography. All we want is some good photographs that can amaze and humour us.
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    1. This is an individual event.<br><br>
+                    2. For the first round, only the entries which are submitted on or before 11th March 2016, 11:59 PM will be accepted.<br><br>
+                    3. Maximum of 3 entries per participant.<br><br>
+                    4. The photo should be original. We will not tolerate plagiarism of any kind.<br><br>
+                    5. Only editing such as cropping and adding watermark is acceptable.<br><br>
+                    6. The photograph must not contain obscene, provocative, defamatory, sexually explicit, or otherwise objectionable or inappropriate content.<br><br>
+                    7. Your photographs can be in any format. (.png,.jpeg,.gif). Although we suggest it should be in a universally recognizable format.<br><br>
+                    8. By entering the contest, entrant acknowledges that the submitted photograph is an original work created solely by the entrant, that the photograph does not infringe on the copyrights, trademarks or moral rights, and that no other party has any right, title, claim, or interest in the photograph.<br><br>
+                    9. Decision of the coordinators will be final and binding.<br><br>
+                </p><br>
+                
+                <p class = "center title">EVENT FORMAT</p><br>
+                <p class = "stuff">
+                    ROUND 1:
+                    <br><br>
+                    This will be an online round. Photos should be posted on the Facebook page Light and Life '16 before 11th March 2016, 11:59 PM and the top 50 photographs that get the maximum likes on Facebook will qualify to the second round. The list of Shortlisted entries will be published on 15th March 2016, 12 PM in the Facebook page of Light and Life '16.
+                    <br><br>
+                    Posting Format-Theme:
+                    <br><br>
+                    Name :<br><br>
+                    College :<br><br>
+                    Department :<br><br>
+                    E-mail :<br><br>
+                    Camera :<br><br>
+                    Caption (optional) :<br><br>
+                    ROUND 2:
+                    <br><br>
+                    Now comes the real thrill! This will be an on-the-spot round. The shortlisted participants will be given a theme and will be asked to take photographs within the college premises.
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Vignesh C.V : 9715691272 <br><br>
+                    Khavya R : 9003593343<br><br>
+                </p><br>
+            </div>
+
+
+            <!-- kurum padam -->
+            
+            <div class = "body event_page kurumpadam">
+                <p class = "center title">KURUM PADAM</p><br><br>
+                <p class = "stuff">
+                    "There are only 24 hours in a day and the director's top priority is working on films but the director’s first choice is short film experiment". So, film makers get ready with your creativity and visuals!
+                    <br><br>
+                    Short Film
+                    <br><br>
+                    A Short film is any film not long enough to we consider feature film consensus exists us to where that boundary is drawn .The academy of motion picture arts and sciences defines a short film as "An original motion picture that has running time of 15-20min including all credits".
+                </p><br>
+                
+                <p class = "center title">RULES AND REGULATIONS</p><br>
+                <p class = "stuff">
+                    1. A film can be in any journal.<br><br>
+                    2. Film must be in 15-20mins.<br><br>
+                    3. Make it visual.<br><br>
+                    4. Malpractices should be disqualified immediately.<br><br>
+                    5. Must have good cinematography and editing.<br><br>
+                    6. Malpractices will be disqualified immediately<br><br>
+                </p><br>
+                
+                <p class = "center title">ORGANIZERS</p><br>
+                <p class = "stuff">
+                    Kiran Prasad S: 9789303977<br><br>
+                    Somnanth Balaji S: 9965594951<br><br>
+                </p><br>
+            </div>
+
+            <div class = "footer">
+                <a href = "http://instagram.com/cybernova16"><p class = "fa fa-instagram social-icons"></p></a>
+                <a href = "http://youtube.com/"><p class = "fa fa-youtube social-icons"></p></a>
+                <a href = "http://faceboook.com/skcetcybernova"><p class = "fa fa-facebook-square social-icons"></p></a>
             </div>
             
         </div>
         
+        
+        <!-- SIDEBAR -->
+        <div class = "content sidebar">
+            <div class = "title">
+                <img src = "images/logo.png" width = "40%">
+                <div class = "fa fa-bars menu_close"></div>
+            </div>
+            <div class = "menu">
+                <div id = "hme">
+                    HOME
+                </div>
+                <div id = "about">
+                    ABOUT
+                </div>
+                <div id = "events">
+                    EVENTS
+                </div>
+                <div id = "register">
+                    REGISTER
+                </div>
+                <div id = "sponsors">
+                    SPONORS
+                </div>
+                <div id = "contact">
+                    CONTACT
+                </div>
+            </div>
+        </div>
+        
+        
     </body>
-    
 </html>
