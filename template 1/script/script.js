@@ -158,15 +158,17 @@ $(document).ready(function(){
     });
     
     var images = [
-        "url('images/hero 1.JPG')",
-        "url('images/hero 2.jpg')"
+        "url('images/hero1.jpg')",
+        "url('images/hero2.jpg')",
+        "url('images/hero3.jpg')",
+        "url('images/hero4.jpg')"
     ];
     
     i = 1;
     
     function heroslide(){
         $("#hero").css("background-image", images[i]);
-        i = (i + 1) % 2;
+        i = (i + 1) % 4;
     }
     
     setInterval(heroslide, 4000);

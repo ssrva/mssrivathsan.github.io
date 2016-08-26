@@ -1,7 +1,7 @@
 #hero{
 	width: 100%;
 	height: 100%;
-	background-image: url('../images/hero 1.JPG');
+	background-image: url('../images/hero1.jpg');
     background-size: 100%;
     background-position: center;
     position: fixed;
@@ -60,9 +60,11 @@
     animation: spacing1 2s forwards;
     text-transform: uppercase;
     text-shadow: -3px 1px 2px #333;
+    color: #2172bd;
 }
 
 #hero .name .college:nth-child(2n){
     animation: spacing 2s forwards;
-    font-size: 18px;
+    font-size: 24px;
+    color: #f7a72d;
 }
