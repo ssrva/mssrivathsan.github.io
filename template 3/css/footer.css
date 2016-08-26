@@ -1,0 +1,47 @@
+footer{
+    padding: 20px;
+    background-color: #303841;
+    box-shadow: 0 0 3px #303841;
+    color: #fff;
+}
+
+footer .flex{
+    display: flex;
+}
+
+footer .flex > div{
+    flex: 1;
+    padding: 0 20px 0 20px;
+}
+
+footer .border{
+    border-right: 1px solid #333;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img{
+    margin: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.3s;
+}
+
+footer img:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+footer .image{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .right{
+    text-align: right;
+}
