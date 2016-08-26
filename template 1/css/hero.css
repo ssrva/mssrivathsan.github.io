@@ -1,0 +1,68 @@
+#hero{
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/hero 1.jpg');
+    background-size: 100%;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+@keyframes rot{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+#hero #logo{
+    animation: rot 4s infinite;
+}
+
+#hero .name{
+    font-family: calibribold, calibri;
+    color: #fff;
+    text-align: center;
+    margin-left: 20px;
+}
+
+@keyframes spacing{
+    from{
+        letter-spacing: -10px;
+    }
+    
+    to{
+        letter-spacing: 1px;
+    }
+}
+
+@keyframes spacing1{
+    from{
+        letter-spacing: -10px;
+    }
+    
+    to{
+        letter-spacing: 5px;
+    }
+}
+
+#hero .name .college{
+    font-size: 50px;
+    letter-spacing: -10px;
+    animation: spacing1 2s forwards;
+    text-transform: uppercase;
+    text-shadow: -3px 1px 2px #333;
+}
+
+#hero .name .college:nth-child(2n){
+    animation: spacing 2s forwards;
+    font-size: 18px;
+}

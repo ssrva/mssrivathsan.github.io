@@ -1,0 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Hind+Guntur:600';
+
+p{
+    margin: 0px !important;
+}
+
+#top{
+    background-color: #333;
+    padding: 10px;
+    color: #d1d1d1;
+    text-align: right;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: Hind Guntur, calibri;
+}
+
+header{
+    background-color: #38424D;
+    padding: 20px;
+    box-shadow: inset 0 0 5px #1A1F24;
+    color: #fff;
+}
+
+#header .slogan{
+    text-transform: uppercase;
+    font-family: anivers, calibri;
+    font-style: italic;
+    text-align: right;
+    display: none;
+}
+
+#menu{
+    background-color: #303841;
+    color: #fff;
+    z-index: 2;
+}
+
+#menu div{
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu div div{
+    font-family: anivers, calibri;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+#menu .container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#menucontainer{
+    width: 100%;
+    position: absolute;
+    color: #fff;
+    display: none;
+    z-index: 2;
+}
+
+#menucontainer .container{
+    background-color: #282E36;
+    display: none;
+}
+
+#menucontainer .title{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 20px 0px 10px 0px;
+    font-family: Hind Guntur, calibri;
+    margin-bottom: 20px !important;
+    border-bottom: 2px solid #303841;
+}
+
+#menucontainer .content{
+    padding: 20px 0 20px 0;
+    line-height: 30px;
+}
+
+#menucontainer .links{
+    border-left: 1px solid #303841;
+    padding: 0px;
+    padding-left: 40px;
+    margin: 0px;
+}
+
+#menucontainer .links li{
+    list-style-type: none;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+#menucontainer .link p{
+    font-family: Hind Guntur, calibri;
+    text-transform: uppercase; 
+    border-bottom: 1px solid #303841;
+    padding: 20px 10px 20px 10px;
+}
+
+#menucontainer .links{
+    margin-bottom: 10px;
+}
+
+#menucontainer .links a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#menucontainer .links li:hover{
+    background-color: #232A30;
+}
