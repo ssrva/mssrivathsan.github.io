@@ -158,14 +158,14 @@ $(document).ready(function(){
     });
     
     var images = [
-        "url('images/hero 1.jpg')",
+        "url('images/hero 1.JPG')",
         "url('images/hero 2.jpg')"
     ];
     
     i = 1;
     
     function heroslide(){
-        //$("#hero").css("background-image", images[i]);
+        $("#hero").css("background-image", images[i]);
         i = (i + 1) % 2;
     }
     
