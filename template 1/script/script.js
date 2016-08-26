@@ -165,7 +165,7 @@ $(document).ready(function(){
     i = 1;
     
     function heroslide(){
-        $("#hero").css("background-image", images[i]);
+        //$("#hero").css("background-image", images[i]);
         i = (i + 1) % 2;
     }
     
