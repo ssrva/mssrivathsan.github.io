@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Mockup Makr</title>
+        <link rel = "stylesheet" href = "css/main.css">
+        <script src = "js/glfx.js"></script>
+        <script src = "js/jquery.js"></script>
+        <script src = "js/typed.js"></script>
+        <script src = "js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <p id = "logo">mockup makr</p>
+            <div id = "nav">
+                <ul>
+                    <a href = "#master"><li>Home</li></a>
+                    <a href = "#tool"><li>Tool</li></a>
+                </ul>
+            </div>
+        </header>
+        <div id = "loading"><img src = "images/loading.png">  Processing</div>
+        <div id = "master">
+            <div id = "inner_master">
+                <p id = "text"></p>
+                <div>
+                    <img src = "images/master.png" width = "70%">
+                </div>
+            </div>
+        </div>
+        <div id = "tool">
+            <p id = "title">Make the Mockup</p>
+            <div class = "tool">
+                <div id = "content">
+                    <div class = "layout">
+                        <img id = "one" src = "images/thumb1.jpg" class = "1">
+                    </div>
+                    <div class = "layout">
+                        <img id = "two" src = "images/thumb2.jpg" class = "2">
+                    </div>
+                    <div id = "uploading">
+                        <input type = "file" id = "input" style = "display: none;">
+                        <div id = "buttons">
+                            <div id = "btn">Upload Image</div>
+                            <div id = "btn" class = "process">Process Mockup</div>
+                        </div>
+                        <br><br>
+                        <img id = "preview" width = "100%">
+                    </div>
+                </div>
+                <div class = "canvas_container">
+                    <canvas id="myCanvas" width="1000" height="737"
+    style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+                    <br>
+                    <div id = "btn" class = "download_button">Download as PNG</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            Designed and Developed By <a href = "http://github.com/mssrivathsan" style = "color: #00aeef;">Srivathsan MS</a>.
+        </footer>
+    </body>
+</html>

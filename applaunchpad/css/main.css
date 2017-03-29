@@ -1,0 +1,235 @@
+@font-face{
+    src: url('../fonts/pacifico.ttf');
+    font-family: Pacifico;
+}
+
+@font-face{
+    src: url('../fonts/roboto.ttf');
+    font-family: Roboto;
+}
+
+@font-face{
+    src: url('../fonts/patua.ttf');
+    font-family: Patua;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#loading{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 25px;
+    font-family: Roboto;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@keyframes rot{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+#loading img{
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+    animation: rot 1s infinite;
+}
+
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    justify-content: space-between;
+}
+
+header #logo{
+    color: #fff;
+    font-family: Pacifico;
+    font-size: 40px;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+header #nav{
+    display: flex;
+    align-items: center;
+}
+
+header #nav ul{
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    display: flex;
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+header #nav li{
+    font-size: 18px;
+    padding: 0 50px 0 50px;
+    transition: all 0.3s;
+}
+
+header #nav a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+header #nav a:hover{
+    background-color: #38424d;
+}
+
+#master{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg.jpg');
+}
+
+#master #inner_master{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/texture.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#master #inner_master > *{
+    flex: 1;
+}
+
+#inner_master #text{
+    font-family: Patua;
+    color: #fff;
+    font-size: 80px;
+    margin-left: 50px;
+    text-shadow: 0 0 5px #000;
+}
+
+#inner_master > div{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#tool #title{
+    font-family: Patua;
+    font-size: 30px;
+    text-align: center;
+}
+
+#tool .tool{
+    margin: 50px;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 50px;
+}
+
+#tool #step_number{
+    font-family: Roboto;
+}
+
+#tool #content{
+    display: flex;
+    justify-content: space-around;
+}
+
+#tool #content > div{
+    flex: 1;
+}
+
+#tool #content > div:last-child{
+    flex: 1;
+}
+
+#one{
+    cursor: pointer;
+    border: 5px solid #00aeef;
+    background-size: 100%;
+    background-image: url('../images/thumb1.jpg');
+}
+
+#two{
+    cursor: pointer;
+    border: 5px solid #fff;
+    background-size: 100%;
+    background-image: url('../images/thumb2.jpg');
+}
+
+#uploading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#btn{
+    transition: all 1s;
+    cursor: pointer;
+    font-family: Roboto;
+    text-align: center;
+    width: 200px;
+    border-radius: 50px;
+    padding: 20px;
+    color: #fff;
+    background: #FFB75E; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #FFB75E , #ED8F03); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #FFB75E , #ED8F03); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#btn:hover{
+    background: #FFB75E; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ED8F03, #FFB75E); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ED8F03, #FFB75E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#buttons{
+    display: flex;
+}
+
+#buttons #btn:first-child{
+    margin-right: 20px;
+}
+
+.canvas_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    display: none;
+}
+
+footer{
+    background-color: #303841;
+    color: #fff;
+    padding: 20px;
+    font-family: Roboto;
+    text-align: right;
+}
