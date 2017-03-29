@@ -74,6 +74,8 @@ $(document).ready(function(){
         bg.onload = function () {
             ctx.drawImage(bg, 0, 0);
             ctx.drawImage(img, 275, 305, 440, 270);
+            $("#loading").fadeOut();
+            $(".canvas_container").css("display", "block");
         }
         bg.src = "images/1.png";
         
@@ -89,6 +91,8 @@ $(document).ready(function(){
             ctx.drawImage(bg, 0, 0);
             ctx.rotate(4.8*3.14/180);
             ctx.drawImage(img, 140, 145, 665, 425);
+            $("#loading").fadeOut();
+            $(".canvas_container").css("display", "block");
         }
         bg.src = "images/2.png";
         
@@ -104,8 +108,6 @@ $(document).ready(function(){
         if(selected == 2){
             two();
         }
-        $("#loading").fadeOut();
-        $(".canvas_container").css("display", "block");
     });
     
     $(".download_button").on('click', function(){
