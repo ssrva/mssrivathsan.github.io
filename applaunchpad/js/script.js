@@ -75,7 +75,7 @@ $(document).ready(function(){
             ctx.drawImage(bg, 0, 0);
             ctx.drawImage(img, 275, 305, 440, 270);
             $("#loading").fadeOut();
-            $(".canvas_container").css("display", "block");
+            $(".canvas_container").css("display", "flex");
         }
         bg.src = "images/1.png";
         
@@ -92,7 +92,7 @@ $(document).ready(function(){
             ctx.rotate(4.8*3.14/180);
             ctx.drawImage(img, 140, 145, 665, 425);
             $("#loading").fadeOut();
-            $(".canvas_container").css("display", "block");
+            $(".canvas_container").css("display", "flex");
         }
         bg.src = "images/2.png";
         
