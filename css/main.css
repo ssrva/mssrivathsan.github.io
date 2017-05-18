@@ -419,7 +419,7 @@ header ul a.active{
 }
 
 #plugins #plugins_content #card:hover{
-    transform: translateY(-80px);
+    transform: translateY(-100px);
     height: 300px;
 }
 
