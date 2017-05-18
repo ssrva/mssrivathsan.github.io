@@ -309,7 +309,7 @@ header ul a.active{
     background-repeat: repeat-y;
     background-size: 15%;
     color: #fff;
-    font-family: Calibri;
+    font-family: Calibri, Source Sans Pro;
     text-align: center;
     display: flex;
     flex-direction: column;
