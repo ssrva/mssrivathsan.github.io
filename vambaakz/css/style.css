@@ -179,7 +179,7 @@ header ul a{
     justify-content: center;
     align-items: center;
     color: #333 !important;
-    font-family: Calibri;
+    font-family: Source Sans Pro;
     font-size: 15px;
     flex: 1;
     transition: all 0.3s;
@@ -252,7 +252,7 @@ header ul a:hover{
 }
 
 #first #tagline{
-    font-family: Calibri;
+    font-family: Source Sans Pro;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -322,7 +322,7 @@ header ul a:hover{
 }
 
 #second > div > div p{
-    font-family: Calibri;
+    font-family: Source Sans Pro;
     font-size: 30px;
     text-align: center;
 }
@@ -467,7 +467,7 @@ header ul a:hover{
 }
 
 #fourth p{
-    font-family: Calibri;
+    font-family: Source Sans Pro;
     color: #fff;
     text-align: justify;
     font-size: 30px;
@@ -517,7 +517,7 @@ header ul a:hover{
 }
 
 #sixth p{
-    font-family: Calibri;
+    font-family: Source Sans Pro;
     color: #333;
     text-align: justify;
     font-size: 25px;
@@ -556,7 +556,7 @@ footer .fa{
 }
 
 footer .links p:first-child{
-    font-family: calibri;
+    font-family: Source Sans Pro;
     font-size: 18px;
     border-bottom: 1px solid #282E36;
     padding-bottom: 10px;
@@ -612,7 +612,7 @@ footer .links a:hover{
     background-color: #303841;
     padding: 10px;
     color: #fff;
-    font-family: calibri;
+    font-family: Source Sans Pro;
     text-align: center;
 }
 
