@@ -1,0 +1,714 @@
+@font-face {
+    font-family: Patua;
+    src: url(patua.ttf);
+}
+
+@font-face {
+    font-family: Acme;
+    src: url(acme.ttf);
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(futura.ttf);
+}
+
+.column_centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*scroll start*/
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+    top: 90%;
+	left: 50%;
+    transform: translateX(-50%);
+	text-align: center;
+     z-index: 100;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 15px;
+	font-size: 12px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+    transform: scale(0.6);
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+
+/*scroll end*/
+
+
+p{
+    margin: 0 !important;
+}
+
+header{
+    background-color: rgba(255,255,255,1);
+    box-shadow: 0 0 5px #d1d1d1;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+header div:first-child{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width: 250px;
+    margin: 15px;
+}
+
+
+header ul{
+    display: flex;
+    flex: 2;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header ul a{
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333 !important;
+    font-family: Calibri;
+    font-size: 15px;
+    flex: 1;
+    transition: all 0.3s;
+}
+
+header ul a:hover{
+    color: #333 !important;
+    background-color:  #d1d1d1;
+}
+
+#content{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+}
+
+#first{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    height: 100%;
+}
+
+#first > div:first-child{
+    background-image: url('../images/texture.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#first #symbol_border{
+    width: 250px;
+    height: 250px;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/border.png');
+}
+
+@keyframes rotate{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+#first #symbol_border img{
+    width: 180px;
+    height: 180px;
+    animation: rotate 2s infinite;
+}
+
+
+#first #text_logo{
+    margin-top: 50px;
+    font-family: Futura;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
+
+#first #tagline{
+    font-family: Calibri;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+}
+
+.typed_cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+#second{
+    display: flex;
+    background-color: #fff;
+    
+}
+
+#second > div{
+    flex: 1;
+    height: 50%;
+    background-size: cover;
+    
+}
+
+#second.second_two > div{
+    width: 25%;
+}
+
+#second > div > div .title{
+    font-family: Patua;
+    font-size: 35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second > div > div{
+    padding: 20px;
+}
+
+#second > div > div > div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    border: 3px solid #f1f1f1;
+    padding: 60px;
+}
+
+#second > div > div p{
+    font-family: Calibri;
+    font-size: 30px;
+    text-align: center;
+}
+
+#events{
+    background-image: url('../images/events.jpg');
+}
+
+#events > div{
+    background-color: rgba(84, 144, 243, 0.6);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#events > div:hover{
+    cursor: pointer;
+    background-color: rgba(84, 144, 243, 0.8);
+    padding: 10px;
+}
+
+#advertising{
+    background-image: url('../images/advertising.jpg');
+}
+
+#advertising > div{
+    background-color: rgba(251, 188, 5, 0.6);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#advertising > div:hover{
+    cursor: pointer;
+    background-color: rgba(251, 188, 5, 0.8);
+    padding: 10px;
+}
+
+#wedding{
+    background-image: url('../images/wedding.png');
+}
+
+#wedding > div{
+    background-color: rgba(239, 60, 59, 0.6);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#wedding > div:hover{
+    cursor: pointer;
+    background-color: rgba(239, 60, 59, 0.8);
+    padding: 10px;
+}
+
+#media{
+    background-image: url('../images/media.jpg');
+}
+
+#media > div{
+    background-color: rgba(60, 186, 84, 0.6);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#media > div:hover{
+    cursor: pointer;
+    background-color: rgba(60, 186, 84, 0.8);
+    padding: 10px;
+}
+
+#second.second_two > div > div{
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    transition: all 0.3s;
+}
+
+#second.second_two > div > div:hover{
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+#third{
+/*    background-image: url('../images/texture.png');*/
+    background-color: #fff;
+    background-repeat: repeat;
+    display: flex;
+}
+
+#third p{
+    padding: 50px;
+    font-size: 30px;
+    font-family: futura;
+    flex: 1;
+}
+
+#third a{
+    text-decoration: none;
+    background-color: #00aeef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    transition: all 0.3s;
+}
+
+#third a:hover{
+    background-color: #009bd6;
+}
+
+@keyframes move{
+    from{
+        left: -10px;
+    }
+    to{
+        left: 10px;
+    }
+}
+
+#third a span{
+    position: relative;
+    animation: move 1s infinite;
+}
+
+#fourth{
+    background-image: url('../images/fourth.png');
+    padding: 50px;
+}
+
+#fourth .title{
+    font-family: Patua;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#fourth p{
+    font-family: Calibri;
+    color: #fff;
+    text-align: justify;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+#fifth{
+    background-color: rgba(239, 60, 59, 0.6);
+    padding: 0px;
+}
+
+#fifth img{
+    margin-left: 5%;
+    border-radius: 50%;
+    transform: scale(1.2);
+    border: 5px solid rgba(239, 60, 59, 0.8);
+}
+
+#fifth > span{
+    margin-top: 30px;
+    margin-right: 5%;
+    left: 25%;
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    font-family: Acme;
+}
+
+
+
+#sixth{
+    background-image: url('../images/footerbg.jpg');
+    background-size: cover;
+    padding: 50px;
+}
+
+#sixth .title{
+    font-family: Patua;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+}
+
+#sixth p:first-child{
+    font-size: 30px !important;
+}
+
+#sixth p{
+    font-family: Calibri;
+    color: #333;
+    text-align: justify;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+footer{
+    padding: 50px;
+    background-color: #38424d;
+    color: #fff;
+}
+
+footer .flex{
+    display: flex;
+}
+
+footer .flex > div{
+    padding: 0 20px 0 20px;
+}
+
+footer .border{
+    border-right: 1px solid #282E36;
+}
+
+footer .flex > div{
+    flex: 1;
+}
+
+footer .flex > div:first-child img{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer .fa{
+    margin-right: 10px;
+}
+
+footer .links p:first-child{
+    font-family: calibri;
+    font-size: 18px;
+    border-bottom: 1px solid #282E36;
+    padding-bottom: 10px;
+}
+
+footer .links p{
+    padding: 5px 0 5px 0;
+}
+
+footer .links p:first-child{
+    padding-top: 0px;
+}
+
+footer .links a{
+    color: #B4B2AD;
+    text-decoration: none;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+footer .links a:hover{
+    color: #fff;
+    padding-left: 10px;
+}
+
+.bottom_bar{
+    display: none;
+}
+
+@media(max-width: 450px){
+    .first, .last{
+        display: none;
+    }
+    footer{
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 10px;
+    }
+    
+    footer .links{
+        font-size: 12px;
+    }
+    
+    .bottom_bar{
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
+
+.bottom{
+    background-color: #303841;
+    padding: 10px;
+    color: #fff;
+    font-family: calibri;
+    text-align: center;
+}
+
+.bottom a{
+    color: #00aeef;
+    text-decoration: underline;
+}
+
+#services{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#services #left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#services #left > div{
+    flex: 1;
+    background-size: cover; 
+    overflow: hidden;
+}
+
+#services #left > div > div{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: futura;
+    font-size: 18px;
+    background-position: bottom;
+}
+
+#services #left > div > div:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#services #left #event_planning{
+    background-image: url('../images/events.jpg');
+}
+
+#services #left #advertise{
+    background-image: url('../images/advertising.jpg');
+}
+
+#services #left #social_gathering{
+    background-image: url('../images/social_gathering.jpg');
+}
+
+#services #left #entertainment{
+    background-image: url('../images/bg.jpg');
+}
+
+#services #left #media_support{
+    background-image: url('../images/media.jpg');
+}
+
+#services #left #wedding_makers{
+    background-image: url('../images/wedding.png');
+}
+
+#services #right{
+    flex: 3;
+    background-color: #E9EFF3;
+    padding: 20px;
+}
+
+#services #right > div{
+    background-color: #fff;
+    box-shadow: 0 0 3px #d1d1d1;
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+#services #right #content_title{
+    font-family: futura;
+    font-size: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+#services #right #content_description{
+    padding-top: 20px;
+    font-family: Source Sans Pro;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.advertise, .social_gathering, .entertainment, .media_support, .wedding_makers{
+    display: none;
+}

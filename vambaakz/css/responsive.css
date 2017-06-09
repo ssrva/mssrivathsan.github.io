@@ -1,0 +1,85 @@
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-width: 736px) { 
+      
+        header div:first-child a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        header img{
+            width: 45%;
+            margin: 15px;
+        }
+        header ul{
+            display: none;
+        }
+        
+        #first #symbol_border{
+            width: 150px;
+            height: 150px;
+        }
+        
+        #first #symbol_border img{
+            width: 100px;
+            height: 100px;
+        }
+        
+        #first #text_logo{
+            font-size: 30px;
+        }
+        
+        #first #tagline{
+            font-size: 25px;
+        }
+        
+        #second{
+            flex-direction: column;
+        }
+        
+        #fourth p{
+            text-align: left;
+            font-size: 20px;
+        }
+        
+        #fourth .col-md-5{
+            display: none;
+        }
+        
+        #fifth{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #fifth img{
+            margin: 0;
+            margin-bottom: 30px;
+            transform: scale(1);
+        }
+        
+        #fifth > span{
+            margin: 0;
+            left: 0;
+            position: relative;
+        }
+        
+        #services{
+            display: block;
+        }
+        
+        #services #left{
+            display: block;
+        }
+        
+        #services #left > div{
+            height: 150px;
+        }
+        
+        #services #right > div{
+            height: auto;
+        }
+}
