@@ -55,13 +55,6 @@ body .container{
     font-size: 20px;
     text-transform: uppercase;
 }
-@media only screen 
-    and (min-device-width: 360px) 
-    and (max-device-width: 736px) { 
-        #contact{
-            width: 50%;
-        }
-}
 
 .bottom{
     width: 100%;
@@ -78,4 +71,32 @@ body .container{
 .bottom a{
     color: #00aeef;
     text-decoration: underline;
+}
+
+
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-width: 736px) { 
+        #contact{
+            width: 50%;
+        }
+        
+        .container #left{
+            width: 100%;
+            height: 50%;
+        }
+        
+        .container #right{
+            height: 50%;
+            width: 100%;
+        }
+        
+        .bottom{
+            width: calc(100% - 20px);
+        }
+        
+        #contact{
+            top: 45%;
+            transform: translate(-50%);
+        }
 }
