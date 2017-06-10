@@ -454,6 +454,30 @@ header ul a:hover{
     animation: move 1s infinite;
 }
 
+#gallery{
+/*    background-image: url('../images/texture.png');*/
+    background-color: #fff;
+    background-repeat: repeat;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#gallery .lightbox{
+    
+}
+
+#gallery .title{
+    font-family: Patua;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #333;
+    text-align: center;
+    width: 100%;
+}
+
 #fourth{
     background-image: url('../images/fourth.png');
     padding: 50px;

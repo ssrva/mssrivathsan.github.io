@@ -82,4 +82,11 @@
         #services #right > div{
             height: auto;
         }
+        
+        
+        .lightbox img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
 }
