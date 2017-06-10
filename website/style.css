@@ -1,0 +1,80 @@
+body{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+p{
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+body .container{
+    width: 100%;
+}
+
+.container #left{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-image: url('left.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container #right{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: #f16136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact{
+    background-color: #333;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    width: 30%;
+    transform: translateX(-50%);
+    display: flex;
+    color: #fff;
+    font-family: Source Sans Pro;
+}
+
+#contact > div{
+    padding: 20px;
+}
+
+#contact .title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+@media only screen 
+    and (min-device-width: 360px) 
+    and (max-device-width: 736px) { 
+        #contact{
+            width: 50%;
+        }
+}
+
+.bottom{
+    width: 100%;
+    position: absolute;
+    top: calc(100% - 40px);
+    height: 20px;
+    background-color: #303841;
+    padding: 10px;
+    color: #fff;
+    font-family: Source Sans Pro;
+    text-align: center;
+}
+
+.bottom a{
+    color: #00aeef;
+    text-decoration: underline;
+}
