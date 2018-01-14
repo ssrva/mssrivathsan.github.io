@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "css/bootstrap.css">
+        <link rel = "stylesheet" href = "css/style.css">
+        <script src = "js/jquery.js"></script>
+        <title>Sarathi Industries Billing System</title>
+        <script>
+            $(document).ready(function(){
+                $(".add_button").click(function(){
+                    var html_content = "<div class = 'product'><input type = 'text' class = 'form-control' id = 'hsn_code' placeholder = 'HSN Code'><input type = 'text' class = 'form-control' id = 'description' placeholder = 'Description' style = 'flex: 3;'><input type = 'text' class = 'form-control' id = 'unit' placeholder = 'Unit'><input type = 'text' class = 'form-control' id = 'price' placeholder = 'Price'><input type = 'text' class = 'form-control' id = 'quantity' placeholder = 'Quantity'></div>";
+                    $(".product_list").append(html_content);
+                });
+
+                $("#submit_button").click(function(){
+                    data = {};
+                    data['bill_number'] = $("#bill_number").val();
+                    data['date'] = $("#date").val();
+                    data['company_name'] = $("#company_name").val();
+                    data['city_name'] = $("#city_name").val();
+                    data['gstin'] = $("#gstin").val();
+                    data['dispatched_through'] = $("#dispatched_through").val();
+                    data['packing'] = $("#packing").val();
+                    data['products'] = [];
+                    $(".product").each(function(){
+                        product = {};
+                        product['hsn_code'] = $("#hsn_code", this).val();
+                        product['description'] = $("#description", this).val();
+                        product['unit'] = $("#unit", this).val();
+                        product['price'] = $("#price", this).val();
+                        product['quantity'] = $("#quantity", this).val();
+                        data['products'].push(product);
+                    });
+                    data['igst'] = $("#igst").is(":checked");
+                    data['cgst'] = $("#cgst").is(":checked");
+                    data['sgst'] = $("#sgst").is(":checked");
+                    data['cash'] = $("#invoice_cash").is(":checked");
+                    data['credit'] = $("#invoice_credit").is(":checked");
+
+                    url = "bill.html?data=" + JSON.stringify(data);
+                    window.location = url;
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id = "content">
+            <div id = "sub_block">
+                <p>General Details</p>
+                <input type = "text" class = "form-control" id = "bill_number" placeholder = "Bill Number">
+                <input type = "text" class = "form-control" id = "date" placeholder = "Date">
+                <input type = "text" class = "form-control" id = "company_name" placeholder = "M/s.">
+                <input type = "text" class = "form-control" id = "city_name" placeholder = "City">
+                <input type = "text" class = "form-control" id = "gstin" placeholder = "Party's GSTIN">
+                <input type = "text" class = "form-control" id = "dispatched_through" placeholder = "Dispatched Through">
+                <input type = "text" class = "form-control" id = "packing" placeholder = "Packing">
+            </div>
+            
+            <div id = "sub_block" class = "product_list">
+                <p>Product Details <span class = "add_button">Add Item</span></p><br>
+                <div class = "product">
+                    <input type = "text" class = "form-control" id = "hsn_code" placeholder = "HSN Code">
+                    <input type = "text" class = "form-control" id = "description" placeholder = "Description" style = "flex: 3;">
+                    <input type = "text" class = "form-control" id = "unit" placeholder = "Unit">
+                    <input type = "text" class = "form-control" id = "price" placeholder = "Price">
+                    <input type = "text" class = "form-control" id = "quantity" placeholder = "Quantity">
+                </div>
+            </div>
+
+            <div id = "sub_block">
+                <p>Tax Details</p>
+                <div style = "display: flex;">
+                    <div style = "flex: 1;">
+                        <input type = "checkbox" id = "igst" > IGST
+                    </div>
+                    <div style = "flex: 1;">
+                        <input type = "checkbox" id = "cgst" > CGST
+                    </div>
+                    <div style = "flex: 1;">
+                        <input type = "checkbox" id = "sgst" > SGST
+                    </div>
+                </div>
+            </div>
+
+            <div id = "sub_block">
+                <p>Invoice Details</p>
+                <div style = "display: flex;">
+                    <div style = "flex: 1;">
+                        <input type = "checkbox" id = "invoice_cash" > CASH
+                    </div>
+                    <div style = "flex: 1;">
+                        <input type = "checkbox" id = "invoice_credit" > CREDIT
+                    </div>
+                </div>
+            </div>
+
+            <button class = "btn btn-success" id = "submit_button">Submit</button>
+        </div>
+    </body>
+</html>

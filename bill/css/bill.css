@@ -1,0 +1,165 @@
+@page {
+    size: A5;
+    margin: 5mm 5mm 5mm 10mm; /* change the margins as you want them to be. */
+}
+
+body{
+    max-height: 100%;
+    font-family: Source Sans Pro, Calibri;
+}
+
+#content{
+    border: 2px solid #000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_meta{
+    font-size: 13px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 5px;
+}
+
+.company_name{
+    color: #000;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.company_name p{
+    font-size: 30px;
+}
+
+.address{
+    line-height: 5px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.company_details{
+    border-bottom: 1px solid #000;
+}
+
+.company_details div:first-child{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company_details div:first-child p:first-child{
+    margin-left: 5px;
+}
+
+.company_details div:first-child p:last-child{
+    margin-right: 5px;
+}
+
+.cash_credit{
+    background-color: #5b5b5b;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px;
+    letter-spacing: 2px;
+}
+
+.part_company_name{
+    text-decoration: underline;
+}
+
+.metadata{
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000;
+}
+
+.metadata p:first-child{
+    margin-left: 5px;
+}
+
+.metadata p:last-child{
+    margin-right: 5px;
+}
+
+.top_row td{
+    font-weight: bold;
+    padding: 0px !important;
+    vertical-align: inherit !important;
+}
+
+.table td{
+    border-right: 1px solid #d1d1d1;
+}
+
+.table .items td{
+    border-top: none;
+}
+
+.table .items:first-child td{
+    border-top: 1px solid #ddd;
+}
+
+.tax p, .total p{
+    margin-bottom: 0px;
+}
+
+.company_name{
+    margin-bottom: 5px;
+    background-color: #5b5b5b;
+    color: #fff;
+}
+
+#products_list{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+}
+
+@media print {
+    .cash_credit {
+        background-color: #5b5b5b !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print {
+    .cash_credit {
+        color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+
+@media print{
+    .cash_credit #invoice_cash{
+        color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print{
+    .cash_credit #invoice_credit{
+        color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print{
+    .company_name{
+        background-color: #5b5b5b !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+
+@media print{
+    .company_name p{
+        color: #fff !important;
+        -webkit-print-color-adjust: exact; 
+    }
+}
+    
