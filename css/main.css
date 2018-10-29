@@ -180,7 +180,7 @@ header .title{
     padding: 10px;
     color: #fff;
     font-family: Pacifico;
-    font-size: 30px; 
+    font-size: 30px;
     margin: 10px;
 }
 
@@ -211,7 +211,7 @@ header ul a.active{
 }
 
 .main{
-    position: relative; 
+    position: relative;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -378,10 +378,14 @@ header ul a.active{
     font-size: 30px;
 }
 
+#plugins #plugins_content #boxes_container{
+  display: flex;
+  justify-content: space-between;
+}
+
 #plugins #plugins_content #boxes{
-    float: left;
     width: 350px;
-    margin-right: 12.5%;
+    margin-right: 0;
     background-color: #fff;
     font-family: Lato;
     height: 370px;
@@ -563,44 +567,44 @@ footer{
 
 
 @media (max-width: 450px) {
-    
+
     header{
         display: none !important;
     }
-    
+
     #mobile_header{
         display: block;
     }
-    
+
     .main .main_title{
         font-size: 100px;
     }
-    
+
     .main .about{
         text-align: center;
         width: 70%;
         font-size: 15px;
         line-height: 25px;
     }
-    
+
     #works_content{
         padding: 50px !important;
         padding-bottom: 0px !important;
     }
-    
+
     #works img{
         width: 350px !important;
     }
-    
+
     #works .description{
         font-size: 15px !important;
         width: 100% !important;
     }
-    
+
     #live_demo{
         font-size: 13px;
     }
-    
+
     #plugins #plugins_content #boxes{
         width: 300px;
         height: 300px;
@@ -611,32 +615,32 @@ footer{
         margin-bottom: 100px;
         transform: translateX(-50%);
     }
-    
+
     #plugins #plugins_content #image{
         height: 240px;
     }
-    
+
     #plugins #plugins_content #boxes #card #title{
         font-size: 15px;
     }
-    
+
     #plugins #plugins_content #boxes #card #description{
         font-size: 13px;
     }
-    
+
     #plugins #plugins_content{
         padding: 50px;
     }
-    
+
     .contact{
         padding: 0px;
     }
-    
+
     #contact_content .left, #contact_content .right{
         float: none !important;
         width: 100%;
     }
-    
+
     #contact_content .right{
         margin-top: 30px;
         display: flex;
@@ -644,25 +648,25 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
+
     #contact_content .right > div{
         width: 80%;
     }
-    
+
     #contact_content .right input, #contact_content .right textarea{
         width: 100% !important;
     }
-    
+
     #contact_content .right button{
         float: none !important;
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     #contact_content .right #data{
         text-align: center;
     }
-    
+
     footer{
         font-size: 13px;
     }
@@ -671,21 +675,21 @@ footer{
 /*tablets*/
 
 @media (min-width: 451px) and (max-width: 800px) {
-    
-    
+
+
     #works img{
         width: 750px;
     }
-    
+
     #works .description{
         font-size: 20px !important;
         width: 80% !important;
     }
-    
+
     .website img{
-        width: 650px !important;  
+        width: 650px !important;
     }
-    
+
     #plugins #plugins_content #boxes{
         width: 400px;
         height: 400px;
@@ -696,31 +700,31 @@ footer{
         margin-bottom: 100px;
         transform: translateX(-50%);
     }
-    
+
     #plugins #plugins_content #image{
         height: 320px;
     }
-    
+
     .main .main_title{
         font-size: 150px;
     }
-    
+
     .main .about{
         text-align: center;
         width: 60%;
         font-size: 20px;
         line-height: 35px;
     }
-    
+
     .contact{
         padding: 0px;
     }
-    
+
     #contact_content .left, #contact_content .right{
         float: none !important;
         width: 100%;
     }
-    
+
     #contact_content .right{
         margin-top: 30px;
         display: flex;
@@ -728,29 +732,29 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
+
     #contact_content .right > div{
         width: 80%;
     }
-    
+
     #contact_content .right input, #contact_content .right textarea{
         width: 100% !important;
     }
-    
+
     #contact_content .right button{
         float: none !important;
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     #contact_content .right #data{
         text-align: center;
     }
-    
+
 }
 
 @media (min-width: 801px) and (max-width: 1200px){
-    
+
     .main .about{
         width: 45%;
     }

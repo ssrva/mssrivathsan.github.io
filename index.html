@@ -13,7 +13,7 @@
         <script src="js/typed.js"></script>
     </head>
     <body>
-        
+
         <span class="scroll-btn">
             <span class="mouse">
                 <span>
@@ -30,20 +30,20 @@
                 <a href = "#contact" class = "contact_link"><li>Contact</li></a>
             </ul>
         </header>
-        
+
         <div id = "mobile_header">
             <p class = "title">srivathsan ms</p>
         </div>
-        
+
         <div id = "master_page_container">
             <div class="bg" data-ibg-bg="images/bg.jpg"></div>
             <div class="main">
                 <p class = "main_title">Hello</p>
-                <p class = "about">I'm Srivathsan from India. I design a lot of websites and a few android applications. So basically I'm a self proclaimed designer. And yeah.. a Student.</p>
+                <p class = "about">I'm Srivathsan from India. I design websites and android applications. And yeah.. a Student.</p>
             </div>
         </div>
-        
-        
+
+
 <!--        website-->
         <div id = "works" class = "website">
             <div id = "works_content">
@@ -55,8 +55,8 @@
                 <img src = "images/website.png" width = "900px">
             </div>
         </div>
-        
-        
+
+
 <!--        buddy app-->
         <div id = "works" class = "works_inverse">
             <div id = "works_content">
@@ -70,41 +70,43 @@
                 <img src = "images/buddy.png" width = "1300px">
             </div>
         </div>
-        
-        
+
+
         <!-- plugins -->
         <div id = "plugins">
             <div id = "plugins_content">
                 <p id = "title">Plugins and Themes</p>
                 <br><br><br><br>
-                <div id = "boxes">
-                    <div id = "image" style = "background-image: url('images/LatestPostsSlider.png');"></div>
-                    <div id = "card">
-                        <p id = "title">Latest Posts Slider <a href = "https://wordpress.org/plugins/latest-post-slider/" target = "_blank" title = "Download Link"><span class = "fa fa-chain"></span></a></p>
-                        <p id = "description">A WordPress plugin that would display a slider with a list of the latest posts on the blog.</p>
-                    </div>
-                </div>
-                
-                <div id = "boxes">
-                    <div id = "image" style = "background-image: url('images/PictureBox.png');"></div>
-                    <div id = "card">
-                        <p id = "title">PictureBox <a href = "https://github.com/mssrivathsan/picturebox" target = "_blank" title = "Download Link"><span class = "fa fa-chain"></span></a></p>
-                        <p id = "description">A jQuery plugin that allows you to add a light box to your websites in just five lines of code.</p>
-                    </div>
-                </div>
-                
-                <div id = "boxes">
-                    <div id = "image" style = "background-image: url('images/Xproweb.png');"></div>
-                    <div id = "card">
-                        <p id = "title">Xproweb - A WP Theme <a href = "https://drive.google.com/open?id=0B4w-WuNA7q2qV3phMlA0eXg5Wk0" title = "Download Link" target = "_blank"><span class = "fa fa-chain"></span></a>
-                            <a style = "margin-right: 10px;" href = "https://drive.google.com/open?id=0B4w-WuNA7q2qMTRLZzNnYUJCTFU" title = "Screenshots" target = "_blank"><span class = "fa fa-image"></span></a></p>
-                        <p id = "description">A simple two-column magazine style responsive WordPress template.</p>
-                    </div>
+                <div id = "boxes_container">
+                  <div id = "boxes">
+                      <div id = "image" style = "background-image: url('images/LatestPostsSlider.png');"></div>
+                      <div id = "card">
+                          <p id = "title">Latest Posts Slider <a href = "https://wordpress.org/plugins/latest-post-slider/" target = "_blank" title = "Download Link"><span class = "fa fa-chain"></span></a></p>
+                          <p id = "description">A WordPress plugin that would display a slider with a list of the latest posts on the blog.</p>
+                      </div>
+                  </div>
+
+                  <div id = "boxes">
+                      <div id = "image" style = "background-image: url('images/PictureBox.png');"></div>
+                      <div id = "card">
+                          <p id = "title">PictureBox <a href = "https://github.com/mssrivathsan/picturebox" target = "_blank" title = "Download Link"><span class = "fa fa-chain"></span></a></p>
+                          <p id = "description">A jQuery plugin that allows you to add a light box to your websites in just five lines of code.</p>
+                      </div>
+                  </div>
+
+                  <div id = "boxes">
+                      <div id = "image" style = "background-image: url('images/Xproweb.png');"></div>
+                      <div id = "card">
+                          <p id = "title">Xproweb - A WP Theme <a href = "https://drive.google.com/open?id=0B4w-WuNA7q2qV3phMlA0eXg5Wk0" title = "Download Link" target = "_blank"><span class = "fa fa-chain"></span></a>
+                              <a style = "margin-right: 10px;" href = "https://drive.google.com/open?id=0B4w-WuNA7q2qMTRLZzNnYUJCTFU" title = "Screenshots" target = "_blank"><span class = "fa fa-image"></span></a></p>
+                          <p id = "description">A simple two-column magazine style responsive WordPress template.</p>
+                      </div>
+                  </div>
                 </div>
             </div>
             <div style = "clear: both; margin-bottom: 100px;"></div>
         </div>
-        
+
         <!-- particles.js container -->
         <div id = "contact">
             <div id="particles-js"></div>
@@ -133,13 +135,13 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <p>&copy; 2017. Made with &nbsp;<span class = "fa fa-heart" style = "color: #db3236;"></span>&nbsp; by Srivathsan MS.</p>
         </footer>
-        
+
     </body>
-    
+
     <!-- scripts -->
     <script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
     <script>
@@ -158,9 +160,9 @@
     <script src="js/app.js"></script>
     <script type="text/javascript">
         $(".bg").interactive_bg();
-        
+
         $(window).on('scroll', function(){
-            
+
             if($(window).scrollTop() == 0){
                 $("header").css("background-color", "transparent");
                 $("header").css("color", "#fff");
@@ -169,7 +171,7 @@
             else{
                 $("header").css("background-color", "rgba(48,56,65,1)");
             }
-            
+
             if($(window).scrollTop() != 0 && $(window).scrollTop() < $("#master_page_container").height() - $("header").height()){
                 $("header ul a").removeClass("active");
                 $("header ul .home_link").addClass("active");
@@ -183,10 +185,10 @@
                 $("header ul .works_link").addClass("active");
             }
             else{
-                
+
             }
         });
-        
+
         $(window).on("load", function(){
             console.log($("#master_page_container").height() + $(".website").height() + $(".works_inverse").height());
             $("header").css("animation", "fade 2s forwards");
@@ -194,9 +196,9 @@
                 $(".main > *").css("animation", "fade_animate 2s forwards");
             }, 2000);
         });
-        
+
         $(document).on('ready', function(){
-            
+
             //smooth scroll
             $(function() {
               $('a[href*="#"]:not([href="#"])').click(function() {
@@ -213,22 +215,22 @@
               });
             });
 
-            
+
             $("#contact").css("height", $("#contact .contact").height() + 160);
-            
+
             $("#plugins #plugins_content #card").on('mouseover', function(){
                 $(this).children("#description").fadeIn();
             });
-            
+
             $("#plugins #plugins_content #card").on('mouseleave', function(){
                 $(this).children("#description").fadeOut();
             });
-            
+
             $("#send_mail").on('click', function(){
                 var name = $("#name").val();
                 var mail = $("#mail").val();
                 var message = $("#message").val();
-                
+
                 if(name == "" || mail == "" || message == ""){
                     $(".right #data").show();
                     $(".right #data").html("<span style = 'color: red;'>All fields are mandatory.</span>");
@@ -254,10 +256,10 @@
                     });
                 }
             });
-            
+
         });
     </script>
-    
+
     <script type="text/javascript">
 (function(d,s,id){var z=d.createElement(s);z.type="text/javascript";z.id=id;z.async=true;z.src="//static.zotabox.com/6/1/610dcdd6bf4ec8e1fcaf4af197fc4ffc/widgets.js";var sz=d.getElementsByTagName(s)[0];sz.parentNode.insertBefore(z,sz)}(document,"script","zb-embed-code"));
 </script>
